@@ -6,12 +6,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="change">
-        <img onclick="change_theme()" src="./assets/dark_mode_icon.svg" alt="">
-    </div>
-    <div class="nav-container">
-        <div><img id="logo" src="./assets/logo.png" alt="logo" /></div>
+<body class="light">
+   
+    <button  onclick="changeTheme()" class="change light-btn">
+        <img src="./assets/dark_mode_icon.svg"  alt="">
+    </button>
+    <button  onclick="changeTheme()" class="change hide dark-btn">
+        <img src="./assets/dark-mode.svg" alt="">
+    </button>
+    <div class="nav-container light">
+        <div>
+            <img class="logo" src="./assets/logo-header.png" alt="logo" />
+            <img class="logo dark-logo hide" src="./assets/dark-logo-header.png" alt="logo" />
+        
+        </div>
         <div>
             <nav id="nav-bar">
                 <h1><a>Home</a></h1>
@@ -26,7 +34,8 @@
     <div class="banner-container" data-scroll-container>
         <div class="left" data-scroll-section>
             <div class="left-cont">
-                <img data-scroll  class="cont-hidden" id="img1" src="./assets/-dark-logo.png" alt="dark-logo"/>
+                <img data-scroll  class="cont-hidden img1" src="./assets/dark-logo.png" alt="dark-logo"/>
+                <img data-scroll  class="cont-hidden dark-img1 img1 hide" src="./assets/light-logo.png" alt="dark-logo"/>
                 <h1  data-scroll  class="cont-hidden">
                     Navigate the World of 
                     <span class="banner-left-head">Cannabis</span>
@@ -40,10 +49,10 @@
             <img data-scroll class="right-hidden" src="./assets/right-banner.png" alt="Right_banner.png" />
         </div>
     </div>
-    <div  class="explore-container" data-scroll-container>
+    <div  class="explore-container exp" data-scroll-container>
         <div class="explore"  data-scroll-section>
             <div class="exp-left"  data-scroll-section>
-                <div class="img data-scroll-cont">
+                <div class="img-cont" data-scroll-container>
                     <img data-scroll class="left-hidden" src="./assets/explore-mobile.png" alt="explore-left">
                 </div>
             </div>
@@ -109,7 +118,7 @@
     <div class="contact-container" data-scroll-container>
         <div class="con-contain"  data-scroll-section>
             <div class="con-left"  data-scroll-section>
-                <img data-scroll src="./assets/-dark-logo.png" alt="">
+                <img data-scroll src="./assets/dark-logo.png" alt="">
                 <h1  data-scroll class="cont-hidden"> <span>Sign up</span> as a vendor and grow your cannabis business</h1  data-scroll>
                 <button class="cont-hidden">SIGN UP</button>
             </div>
@@ -122,12 +131,6 @@
         <footer>Copyright © 2024 by PiffPoint</footer>
     </div>
 
-    <script defer src="/script.js"></script>
-    <script src="locomotive-scroll.min.js"></script>
-<script>
-    (function () {
-        var scroll = new LocomotiveScroll();
-    })();
-</script>
+    <script src="/script.js" defer/>
 </body>
 </html>

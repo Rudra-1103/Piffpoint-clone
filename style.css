@@ -120,6 +120,14 @@ body{
    justify-content: center;
     padding:120px 0 180px
 }
+.exp-dark{
+    background: url(./assets/explore-banner-dark.png);
+    background-repeat: no-repeat;
+    height: 723px;
+    display: flex;
+    justify-content: center;
+    padding:120px 0 180px
+ }
 .explore{
     display: flex;
     width: 1620px;
@@ -130,8 +138,8 @@ body{
     padding: 0px 12px;
 }
 .img-cont img{
-    padding-right: 87px;
-    height: 500px;
+    padding-right: 100px;
+    height: 550px;
 }
 .explore-container .exp-left{
     /* background-color: red; */
@@ -180,6 +188,7 @@ body{
     background: linear-gradient(to right,#057A4C,#94D64E);
 }
 .discover-container{
+    z-index: 10;
     margin-top: 85px;
     position: relative;
 }
@@ -205,6 +214,16 @@ body{
     display: flex;
     /* background:lavender */
 }
+.banner-dis-dark{
+    background: url(./assets/discover-banner-dark.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 835px;
+    padding: 104px 20px;
+    display: flex;
+    /* background:lavender */
+}
+
 .banner-dis .dis-left{
     padding-top: 100px;
     padding-left: 30px;
@@ -216,6 +235,9 @@ body{
     font-size: 16px;
     color: #707070;
     font-weight: 100;
+}
+.banner-dis-dark .dis-left p{
+    color: white;
 }
 .banner-dis .dis-left h1{
     font-size: 50px;
@@ -335,6 +357,11 @@ padding-top: 100px;
     background: url(./assets/banner-enhance.png);
     background-repeat: no-repeat;
 }
+.enhance-container-dark{
+    height: 100vh;
+    background: url(./assets/banner-enhance-dark.png);
+    background-repeat: no-repeat;
+}
 .en-contain{
     margin: 0 122px;
     padding: 0 12px;
@@ -403,11 +430,14 @@ padding-top: 100px;
     width: 55vw;
 }
 .con-left{
-    padding: 100px;
+    padding: 70px;
     width: 50%;
+    color: black;
+
 }
 .con-left button{
     font-size: 15px;
+    white-space: nowrap;
     padding: 16px 220px;
     border-radius: 50px;
     color: white;
@@ -447,18 +477,21 @@ padding-top: 100px;
     color: white;
 }
 .change{
+    z-index: 100000;
     position: sticky;
     height: 60px;
     width: 70px;
     background-color: #f0f0f0;
+    border: none;
     border-radius:0 50px 50px 0 ;
     top:500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .change img{
-    height: 40px;
+    height: 30px;
 }
 @property --num {
     syntax: '<integer>';
@@ -509,7 +542,21 @@ padding-top: 100px;
     transform: translateY(0%);
     opacity: 1;
 } 
+.light{
+    background-color: white;
+}
 
-
-
+.dark {
+    background-color: #000000;
+    color: white
+}
+.dark p{
+    color: white;
+}
+.hide{
+    display: none;
+}
+.dark-btn{
+    background-color: #0E0E0E;
+}
  
